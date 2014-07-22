@@ -1,0 +1,10 @@
+boatsOptimizeData = load('../savedData/boatsOptimizeData');
+einsteinOptimizeData = load('../savedData/einsteinOptimizeData');
+fcurve20sparse = load('../savedData/featureCurve20sparse');
+fcurve40sparse = load('../savedData/featureCurve40sparse');
+fcurve50sparse = load('../savedData/featureCurve50sparse');
+fcurve70sparse = load('../savedData/featureCurve90sparse');
+fcurve90sparse = load('../savedData/featureCurve90sparse');
+featureOptimizeData = load('../savedData/featureOptimizeData');
+graphicsData = load('../savedData/graphicsData');
+%featureOptima = load('../savedData/featureOptima');
