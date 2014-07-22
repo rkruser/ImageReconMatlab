@@ -1,5 +1,7 @@
+%% Initialize Paths
+addpath('../svdAlgorithm');
 %% Initialize parameters
-imagePath = '../images/einstein.jpg'; 
+imagePath = '../Images/einstein.jpg'; 
 writeIdentifier = 'einstein'; % Set this to identify the image in the filename
 writeDestination = '../images/';
 writeExtension = '.png'; %For lossless compression
@@ -44,12 +46,12 @@ image(Final); % Display the reconstructed image
 % The lower the rmse and the higher the psnr, the better the reconstruction
 [rmse, psnr] = psnrDb(M, Final, 255); 
 %% Write the files
-sparseName = sprintf('%s%s %i sparse%s', writeDestination, ...
-    writeIdentifier, 100*sparsity, writeExtension);
-reconName = sprintf('%s%s %i sparse %i features%s', writeDestination, ...
-    writeIdentifier, 100*sparsity, features, writeExtension);
-imwrite(sparseImage, sparseName);
-imwrite(Final, reconName);
+% sparseName = sprintf('%s%s %i sparse%s', writeDestination, ...
+%     writeIdentifier, 100*sparsity, writeExtension);
+% reconName = sprintf('%s%s %i sparse %i features%s', writeDestination, ...
+%     writeIdentifier, 100*sparsity, features, writeExtension);
+% imwrite(sparseImage, sparseName);
+% imwrite(Final, reconName);
 
 
 

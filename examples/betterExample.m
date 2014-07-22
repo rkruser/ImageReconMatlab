@@ -1,7 +1,9 @@
+%% Initialize Paths
+addpath('../svdAlgorithm');
 %% Initialize parameters
-imagePath = '../svdImages/beach.jpg'; 
+imagePath = '../Images/beach.jpg'; 
 writeIdentifier = 'beach'; % Set this to identify the image in the filename
-writeDestination = '../svdImages/Processed/';
+writeDestination = '../Images/Processed/';
 writeExtension = '.png'; %For lossless compression
 isColor = false; % Don't forget to tell the program if the image is in color
 sparsity = 0.7;
